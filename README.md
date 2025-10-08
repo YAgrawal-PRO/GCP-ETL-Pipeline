@@ -41,13 +41,13 @@ pip install pandas requests psycopg2-binary
 Create a simple sales\_data table in your GCP PostgreSQL instance.
 
 ```
-\-- SQL: Create the table structure  
+-- SQL: Create the table structure  
 CREATE TABLE IF NOT EXISTS sales\_data (  
-    sale\_id SERIAL PRIMARY KEY,  
-    product\_category VARCHAR(100),  
+    sale_id SERIAL PRIMARY KEY,  
+    product_category VARCHAR(100),  
     region VARCHAR(50),  
-    sale\_amount NUMERIC(10, 2),  
-    transaction\_date DATE,  
-    load\_timestamp TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()  
+    sale_amount NUMERIC(10, 2),  
+    transaction_date DATE,  
+    load_timestamp TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()  
 );  
 ```
